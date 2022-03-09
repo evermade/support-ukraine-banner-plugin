@@ -5,7 +5,7 @@ Plugin Name: Support Ukraine Banner
 Plugin URI: https://evermade.fi/
 Description: Display a small banner on your website to support Ukraine.
 Author: Evermade
-Version: 1.0.1
+Version: 1.0.2
 Author URI: https://evermade.fi/
 */
 
@@ -105,7 +105,7 @@ function get_option_value($key) {
 
 	$defaults = [
 		'label' => 'Support Ukraine!',
-		'url' => 'https://help.unicef.org/ukraine-emergency',
+		'url' => 'https://www.evermade.fi/support-ukraine/',
 		'placement' => 'left',
 	];
 
