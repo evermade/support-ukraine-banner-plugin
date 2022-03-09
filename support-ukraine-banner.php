@@ -5,14 +5,15 @@ Plugin Name: Support Ukraine Banner
 Plugin URI: https://evermade.fi/
 Description: Display a small banner on your website to support Ukraine.
 Author: Evermade
-Version: 1.0.0
+Version: 1.0.1
 Author URI: https://evermade.fi/
 */
+
 
 /**
  * Render banner after opening body tag.
  */
-add_action('wp_body_open', function() {
+add_action('wp_footer', function() {
 	$label = get_option_value('label');
 	$url = get_option_value('url');
 	$placement = get_option_value('placement');
