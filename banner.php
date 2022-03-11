@@ -73,15 +73,15 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 </style>
 <a
-  class="support-ukraine support-ukraine--<?= $placement ?>"
-  href="<?= $url ?>"
+  class="support-ukraine support-ukraine--<?= esc_attr($placement) ?>"
+  href="<?= esc_attr($url) ?>"
   target="_blank"
   rel="nofollow noopener"
-  title="<?= $label ?>"
+  title="<?= esc_attr($label) ?>"
 >
   <div class="support-ukraine__flag" role="img" aria-label="Flag of Ukraine">
     <div class="support-ukraine__flag__blue"></div>
     <div class="support-ukraine__flag__yellow"></div>
   </div>
-  <div class="support-ukraine__label"><?= $label ?></div>
+  <div class="support-ukraine__label"><?= esc_html($label) ?></div>
 </a>
